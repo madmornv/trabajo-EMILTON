@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: black; /* Fondo negro para contraste */
+    color: white;
+}
+
+.hero {
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: visible;
+}
+
+/* Pseudo-elemento para desenfocar solo el fondo */
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../IMG/body1.jpg'); /* Ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px); /* Aplica el desenfoque */
+    z-index: 0;
+}
+
+
+.welcome-text {
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 10px rgba(254, 252, 252, 0.7);
+    background: linear-gradient(90deg, #0b0b0b, #fdffff, #22201f);
+    background-size: 300% 300%;
+    
+    /* Compatibilidad con navegadores modernos */
+    background-clip: text;
+    color: transparent;
+
+    /* Compatibilidad con navegadores más antiguos */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Animación del degradado */
+    animation: gradientAnimation 3s infinite alternate;
+    z-index: 2; 
+}
+
+/* Animación solo para el color */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+

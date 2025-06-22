@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffffb3;
+    color: #1a1a1a;
+  }
+  
+  .footer {
+    border-top: 1px solid #090808;
+    padding: 40px 60px;
+    background-color:  rgba(63, 19, 3, 0.804);
+    height: 3000px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  .footer-brand {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .footer-brand h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .footer-brand p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  .footer-brand img {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }                                 
+
+.social-icons {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  
+  .social-icons a {
+    color: #060303;
+    font-size: 1.5rem; 
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: #000;
+  }
+  
+
+  .social-icons img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  .footer-links {
+    display: flex;
+    flex: 2;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .footer-links h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: #060000;
+    cursor: pointer;
+  }
+  
+  .footer-links ul li a {
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+  
+  .footer-links ul li a:hover {
+    border-color: #030000;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #0b0202;
+    margin-top: 40px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    color: #110000;
+  }
+  
+  .footer-bottom a {
+    color: #0f0404;
+    text-decoration: underline;
+  }
+  
+  

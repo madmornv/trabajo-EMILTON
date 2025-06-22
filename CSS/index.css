@@ -1,0 +1,71 @@
+/* Estilo base */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fbf7f7;
+    font-family: sans-serif;
+    background-image: url('../IMG/fondoo.jpg');
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit; /* Usa la misma imagen de fondo */
+    filter: blur(8px); /* Ajusta la intensidad del desenfoque */
+    z-index: -1; /* Coloca el desenfoque detrás del contenido */
+}
+  
+  /* Todos los iframe ocupan el ancho completo del viewport */
+  iframe {
+    width: 100%;
+    border: none;
+    display: block;
+    position: relative;
+    z-index: 0;
+  }
+  
+  /* Alturas ajustadas manualmente (ajusta según el contenido real) */
+  .Header {
+    height: 100px;
+  }
+  
+  
+  
+  .Body1 {
+    height: 500px;
+    margin: 0 auto; /* centra horizontalmente si hay ancho limitado */
+    padding: 0;
+    max-width: 90%; /* hace que no ocupe todo el ancho */
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: white; 
+  }
+
+  .Body2 {
+    height: 300px; 
+  }
+
+  .Body3 {
+    height: 580px; 
+  }
+
+  .CardsSection {
+    height: 220px;  
+    margin-bottom: 30px; 
+  }
+  
+
+  .Body4 {
+    height: 700px; 
+  }
+
+  .Footer {
+    height: 470px;
+  }
+  
+ 
